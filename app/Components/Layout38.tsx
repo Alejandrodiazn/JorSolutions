@@ -18,10 +18,13 @@ type ImageProps = {
     } as Props;
     return (
       <section className="relative px-[5%]">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="flex items-center py-16 md:py-24 lg:py-28">
-            <div className="max-w-md">
-              <h3 className="mb-5 text-4xl font-bold leading-[1.2] text-text-alternative md:mb-6 md:text-5xl lg:text-6xl">
+            <div className="max-w-md mx-auto text-center">
+              <div className="mb-5 md:mb-6 flex justify-center">
+                <img src="cleanwatt-logo.svg" alt="" />
+              </div>
+              <h3 className="mb-5 text-4xl font-bold leading-[1.2] text-text-alternative md:mb-6 md:text-5xl lg:text-6xl hidden">
                 {heading}
               </h3>
               <p className="text-base text-text-alternative md:text-md">{description}</p>

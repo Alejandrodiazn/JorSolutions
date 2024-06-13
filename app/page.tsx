@@ -6,6 +6,7 @@ import { Logo3, Logo3Defaults } from "./Components/Logos";
 import { Footer7 } from "./Components/Footer7";
 import { Gallery13 } from "./Components/Gallery";
 import { Layout131 } from "./Components/Cards";
+import { Section2cols } from "./Components/Layout2col";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Header5/>
       <Logo3/>
       <Layout38/>
+      <Section2cols/>
       <Layout131/>
       <Footer7/>
     </>

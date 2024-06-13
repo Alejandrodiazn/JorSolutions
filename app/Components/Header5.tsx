@@ -59,7 +59,7 @@ export const Header5Defaults: Header5Props = {
     "Donde la innovación y la tecnología se unen para impulsar un mañana más sostenible. Descubre cómo nuestras soluciones en energías renovables, industrial y desarrollo sustentable pueden llevar tu empresa hacia al siguiente nivel.",
   buttons: [{ title: "Solicitar cotización" }],
   image: {
-    src: "hero-image.jpg",
+    src: "hero-image-2.jpg",
     alt: "Placeholder image",
   },
 };
