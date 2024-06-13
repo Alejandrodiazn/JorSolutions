@@ -50,7 +50,7 @@ export const Header5 = (props: Header5Props) => {
         <img src={image.src} className="size-full object-cover" alt={image.alt} />
         <div className="absolute inset-0 bg-black/50" />
       </div>
-      <div className="absolute bottom-0 right-0 -z-10">
+      <div className="absolute bottom-0 right-0 -z-10 transform md:scale-50">
         <img src={bgimage.src} alt={bgimage.alt} />
       </div>
     </header>
