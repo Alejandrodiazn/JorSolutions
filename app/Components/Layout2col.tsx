@@ -10,7 +10,7 @@ type Props = {
   description1: string;
   heading2: string;
   description2: string;
-  image1: ImageProps; // Cambiado a image1 y image2
+  image1: ImageProps; 
   image2: ImageProps;
 };
 
@@ -82,11 +82,11 @@ export const Section2colsDefaults: Section2colsProps = {
   description2:
     "En VDG Soluciones Integrales, estamos  convencidos de que siempre existe una solución para reducir el impacto  ambiental. Por eso, entregamos emplaye reciclado de alta calidad,  ayudando a nuestros clientes a minimizar costos y contribuir a un  entorno más sostenible.",
   image1: {
-    src: "Fundacion.jpg",
+    src: "fundacion.jpg",
     alt: "Imagen de Cleanwatt",
   },
   image2: {
-    src: "Soluciones.jpg", // Cambiar por la ruta de tu otra imagen
+    src: "soluciones.jpg",
     alt: "Otra imagen",
   },
 };
