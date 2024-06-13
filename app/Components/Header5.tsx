@@ -11,12 +11,13 @@ type Props = {
   description: string;
   buttons: ButtonProps[];
   image: ImageProps;
+  bgimage: ImageProps;
 };
 
 export type Header5Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Header5 = (props: Header5Props) => {
-  const { heading, description, buttons, image } = {
+  const { heading, description, buttons, image, bgimage } = {
     ...Header5Defaults,
     ...props,
   } as Props;
@@ -49,6 +50,9 @@ export const Header5 = (props: Header5Props) => {
         <img src={image.src} className="size-full object-cover" alt={image.alt} />
         <div className="absolute inset-0 bg-black/50" />
       </div>
+      <div className="absolute bottom-0 right-0 -z-10">
+        <img src={bgimage.src} alt={bgimage.alt} />
+      </div>
     </header>
   );
 };
@@ -60,6 +64,10 @@ export const Header5Defaults: Header5Props = {
   buttons: [{ title: "Solicitar cotización" }],
   image: {
     src: "hero-image-2.jpg",
+    alt: "Placeholder image",
+  },
+  bgimage: {
+    src: "deco-header.png",
     alt: "Placeholder image",
   },
 };
