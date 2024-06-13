@@ -24,7 +24,7 @@ export type Layout131Props = React.ComponentPropsWithoutRef<"section"> & Partial
 export const Layout131 = (props: Layout131Props) => {
   const { sections = [] } = { ...props, ...Layout131Defaults };
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="px-[5%] py-16 md:py-24 lg:py-28 font-sans">
       <div className="container grid grid-cols-1 items-start gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-16 lg:gap-16">
         {sections.map((section, index) => (
           <div key={index} className="rounded-md overflow-hidden">
