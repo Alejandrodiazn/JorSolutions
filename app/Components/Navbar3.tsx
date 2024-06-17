@@ -47,7 +47,7 @@ export const Navbar3 = (props: Navbar3Props) => {
   }, []);
 
   return (
-    <nav className="grid h-auto w-full grid-cols-[1fr_max-content_1fr] items-center justify-between  bg-black/50 fixed z-50 px-[5%] md:min-h-18">
+    <nav className="grid h-auto w-full grid-cols-[1fr_max-content_1fr] items-center justify-between backdrop-blur bg-black/50 fixed z-50 px-[5%] md:min-h-18">
       <button
         className="flex size-12 flex-col justify-center lg:hidden"
         onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -79,7 +79,7 @@ export const Navbar3 = (props: Navbar3Props) => {
               transition: { type: "spring", duration: 0.4, bounce: 0 },
             },
           }}
-          className="absolute left-0 top-0 z-50 flex h-dvh w-[90%] flex-col border-r border-border-primary bg-white px-[5%] pb-4 md:w-[80%] lg:visible lg:static lg:-ml-4 lg:flex lg:h-auto lg:w-auto lg:flex-row lg:border-none lg:px-0 lg:pb-0 lg:[--opacity-closed:100%] lg:[--x-closed:0%]"
+          className="absolute left-0 top-0 z-50 flex h-dvh w-[90%] flex-col border-r border-border-primary  px-[5%] pb-4 md:w-[80%] lg:visible lg:static lg:-ml-4 lg:flex lg:h-auto lg:w-auto lg:flex-row lg:border-none lg:px-0 lg:pb-0 lg:[--opacity-closed:100%] lg:[--x-closed:0%]"
         >
           <a href={logo.url} className="mb-8 mt-10 flex flex-shrink-0 lg:hidden">
             <img src={logo.src} alt={logo.alt} />
@@ -207,10 +207,12 @@ export const Navbar3Defaults: Navbar3Props = {
     alt: "Logo image",
   },
   navLinks: [
-    { title: "Link One", url: "#" },
-    { title: "Link Two", url: "#" },
+    { title: "Misión", url: "#" },
+    { title: "Conócenos", url: "#" },
+    { title: "Cleanwatt", url: "#" },
+    { title: "Proyectos", url: "#" },
     {
-      title: "Link Three",
+      title: "Nuestros servicios",
       url: "#",
       subMenuLinks: [
         { title: "Link Four", url: "#" },
@@ -221,7 +223,7 @@ export const Navbar3Defaults: Navbar3Props = {
   ],
   buttons: [
     {
-      title: "Button",
+      title: "Solicitar cotización",
       size: "sm",
     },
   ],
