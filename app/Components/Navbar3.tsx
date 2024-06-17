@@ -47,7 +47,7 @@ export const Navbar3 = (props: Navbar3Props) => {
   }, []);
 
   return (
-    <nav className="grid h-auto w-full grid-cols-[1fr_max-content_1fr] items-center justify-between border-b border-border-primary bg-background-primary px-[5%] md:min-h-18">
+    <nav className="grid h-auto w-full grid-cols-[1fr_max-content_1fr] items-center justify-between  bg-black/50 fixed z-50 px-[5%] md:min-h-18">
       <button
         className="flex size-12 flex-col justify-center lg:hidden"
         onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -203,7 +203,7 @@ const SubMenu = ({ navLink, isMobile }: { navLink: NavLink; isMobile: boolean })
 export const Navbar3Defaults: Navbar3Props = {
   logo: {
     url: "#",
-    src: "https://relume-assets.s3.amazonaws.com/logo-image.svg",
+    src: "jorsollogoblack.svg",
     alt: "Logo image",
   },
   navLinks: [
