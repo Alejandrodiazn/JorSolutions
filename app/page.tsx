@@ -9,6 +9,7 @@ import { Gallery13 } from "./Components/Gallery";
 import { Layout131, Layout131Defaults} from "./Components/Cards";
 import { Section2cols, Section2colsDefaults } from "./Components/Layout2col";
 import { ServicioSlider } from "./Components/serviciosslider";
+import { ProjectsGallery } from "./Components/ProjectsGallery";
 
 export default function Home() {
   return (

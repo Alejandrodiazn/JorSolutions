@@ -65,11 +65,30 @@ export const Layout131Defaults: Layout131Props = {
   sections: [
     {
       image: {
-        src: "https://relume-assets.s3.amazonaws.com/placeholder-image-landscape.svg",
+        src: "./proyectos/maquinados.jpg",
         alt: "Placeholder image 1",
       },
-      tagline: "Etiqueta",
-      heading: "Nombre del Proyecto",
+      tagline: "Diseño",
+      heading: "MAQUINADOS MRO",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "./proyectos/manofactura.jpg",
+        alt: "Placeholder image 1",
+      },
+      tagline: "Simulación",
+      heading: "MANUFACTURA ADITIVA ",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
       buttons: [
