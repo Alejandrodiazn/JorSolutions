@@ -18,7 +18,6 @@ export default function Home() {
       <ServicioSlider/>
       <Logo3 {...Logo3Defaults}/>
       <Layout38 {...Layout38Defaults}/>
-      <Gallery13/>
       <Section2cols {...Section2colsDefaults}/>
       <Layout131 {...Layout131Defaults}/>
       <Footer7 {...Footer7Defaults}/>
