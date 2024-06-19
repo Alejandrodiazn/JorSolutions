@@ -45,7 +45,7 @@ type ImageProps = {
                 className="grid grid-flow-row grid-cols-1 items-start justify-center justify-items-center gap-6 md:grid-flow-col md:grid-cols-[max-content] md:justify-center md:justify-items-start"
               >
                 {column.links.map((link, linkIndex) => (
-                  <li key={linkIndex} className="font-semibold">
+                  <li key={linkIndex} className="font-semibold text-white/90">
                     <a href={link.url} className="focus-visible:outline-none">
                       {link.title}
                     </a>
@@ -54,12 +54,12 @@ type ImageProps = {
               </ul>
             ))}
           </div>
-          <div className="h-px w-full bg-black" />
+          <div className="h-px w-full bg-white/50" />
           <div className="flex flex-col-reverse items-center justify-between pb-4 pt-6 text-center text-sm md:flex-row md:pb-0 md:pt-8">
-            <p className="mt-8 md:mt-0">{footerText}</p>
+            <p className="mt-8 md:mt-0 text-white/80">{footerText}</p>
             <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-x-0 gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
               {footerLinks.map((link, index) => (
-                <li key={index} className="underline decoration-black underline-offset-1">
+                <li key={index} className="underline decoration-white underline-offset-1 text-white/80">
                   <a href={link.url} className="focus-visible:outline-none">
                     {link.title}
                   </a>
@@ -75,17 +75,17 @@ type ImageProps = {
   export const Footer7Defaults: Footer7Props = {
     logo: {
       url: "#",
-      src: "https://relume-assets.s3.amazonaws.com/logo-image.svg",
+      src: "jorsollogoblack.svg",
       alt: "Logo image",
     },
     columnLinks: [
       {
         links: [
-          { title: "Link One", url: "#" },
-          { title: "Link Two", url: "#" },
-          { title: "Link Three", url: "#" },
-          { title: "Link Four", url: "#" },
-          { title: "Link Five", url: "#" },
+          { title: "Misión", url: "#" },
+          { title: "Conócenos", url: "#" },
+          { title: "Cleanwatt", url: "#" },
+          { title: "Infraestructura", url: "#" },
+          { title: "Proyectos", url: "#" },
         ],
       },
     ],
