@@ -56,7 +56,7 @@ export const ServicioSlider = (props: ServicioSliderProps) => {
       <Carousel setApi={setApi} opts={options} className="overflow-hidden">
         <CarouselContent className="ml-0">
           {sections.map((section, index) => (
-            <CarouselItem key={index} className="relative min-h-screen pl-0">
+            <CarouselItem key={index} className="relative min-h-full pl-0">
               <section className="relative flex items-center justify-center min-h-screen px-[5%]">
                 <div className="container mx-auto">
                   <div className="flex items-center py-16 md:py-24 lg:py-28">

@@ -10,6 +10,9 @@ import { Layout131, Layout131Defaults} from "./Components/Cards";
 import { Section2cols, Section2colsDefaults } from "./Components/Layout2col";
 import { ServicioSlider } from "./Components/serviciosslider";
 import { ProjectsGallery } from "./Components/ProjectsGallery";
+import { Gallery21, Gallery21Defaults } from "./Components/Gallery21";
+import { CarouselCards, CarouselCardsDefaults } from "./Components/CarouselCards";
+import { InfrastructureSlider, InfrastructureSliderDefaults } from "./Components/InfrastructureSlider";
 
 export default function Home() {
   return (
@@ -20,7 +23,8 @@ export default function Home() {
       <Logo3 {...Logo3Defaults}/>
       <Layout38 {...Layout38Defaults}/>
       <Section2cols {...Section2colsDefaults}/>
-      <Layout131 {...Layout131Defaults}/>
+      <CarouselCards {...CarouselCardsDefaults}/>
+      <InfrastructureSlider {...InfrastructureSliderDefaults} />
       <Footer7 {...Footer7Defaults}/>
 
     </>
