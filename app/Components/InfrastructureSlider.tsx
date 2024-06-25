@@ -70,34 +70,14 @@ export const InfrastructureSlider = (props: InfrastructureSliderProps) => {
             {sections.map((section, index) => (
               <CarouselItem key={index} className="basis-auto pr-2 md:pr-4 max-w-[335px] md:max-w-[640px]">
                 <div className="rounded-md overflow-hidden">
-                  <div>
+                  <div className="bg-gradient-to-b from-gray-800 to-gray-900 text-white p-12 flex flex-col items-center justify-center h-full">
+                    <h3 className="text-3xl font-bold mb-4 text-center">{section.heading}</h3>
+                    <p className="text-lg mb-6 text-center">{section.tagline}</p>
                     <img 
                       src={section.image.src} 
                       alt={section.image.alt} 
                       className="md:max-h-[188px] object-cover w-full" 
                     />
-                  </div>
-                  <div className="bg-project-gray-gradient p-12 flex flex-col">
-                    <div className="bg-secondary px-8 py-1 flex mb-3 md:mb-4 w-fit h-fit">
-                      <p className="font-semibold">{section.tagline}</p>
-                    </div>
-                    <h3 className="mb-5 text-4xl font-bold leading-[1.2] md:mb-6 md:text-5xl lg:text-6xl">
-                      {section.heading}
-                    </h3>
-                    <p className="mt-5 md:mt-6">{section.description}</p>
-                    <div className="mt-6 items-center gap-4 md:mt-8">
-                      {section.buttons.map((button, buttonIndex) => (
-                        <Button
-                          key={buttonIndex}
-                          variant={button.variant}
-                          size={button.size}
-                          iconRight={button.iconRight}
-                          iconLeft={button.iconLeft}
-                        >
-                          {button.title}
-                        </Button>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </CarouselItem>
@@ -128,13 +108,13 @@ export const InfrastructureSlider = (props: InfrastructureSliderProps) => {
 };
 
 export const InfrastructureSliderDefaults: InfrastructureSliderProps = {
-  heading: "Cónoce nuestra infraestructura",
+  heading: "Conoce nuestros proyectos",
   description: "Descubre cómo integramos diseño, simulación, manufactura, integración y control para ofrecer soluciones energéticas avanzadas y sostenibles.",
   sections: [
     {
       image: {
-        src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-        alt: "Placeholder image 1",
+        src: "/images/infraestructura1.png",
+        alt: "Imagen de infraestructura 1",
       },
       tagline: "Diseño",
       heading: "MAQUINADOS MRO",
@@ -152,8 +132,8 @@ export const InfrastructureSliderDefaults: InfrastructureSliderProps = {
     },
     {
       image: {
-        src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-        alt: "Placeholder image 2",
+        src: "/images/infraestructura2.png",
+        alt: "Imagen de infraestructura 2",
       },
       tagline: "Simulación",
       heading: "MANUFACTURA ADITIVA",

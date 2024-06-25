@@ -16,6 +16,7 @@ const config: Config = {
         'gray-footer': '#1C1C1C',
       },
       backgroundImage: {
+        "gradient-to-b": "linear-gradient(180deg, #3B9FDA 0%, #1F5574 100%)",
         "project-gray-gradient": "linear-gradient(180deg, #2C2C2C 0%, #0C0C0C 100%)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
