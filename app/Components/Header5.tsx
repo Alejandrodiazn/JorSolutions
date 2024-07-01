@@ -38,6 +38,7 @@ export const Header5 = (props: Header5Props) => {
                   size={button.size}
                   iconRight={button.iconRight}
                   iconLeft={button.iconLeft}
+                  className="bg-primary text-white border-none"
                 >
                   {button.title}
                 </Button>

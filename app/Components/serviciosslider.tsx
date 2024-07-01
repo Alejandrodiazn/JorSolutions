@@ -76,8 +76,8 @@ export const ServicioSlider = (props: ServicioSliderProps) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="-mt-8 ml-8 hidden bg-white lg:flex" />
-        <CarouselNext className="-mt-8 mr-8 hidden bg-white lg:flex" />
+        <CarouselPrevious className="-mt-8 ml-8 hidden bg-trasparent text-primary lg:flex border-none scale-150"/>
+        <CarouselNext className="-mt-8 mr-8 hidden bg-transparent lg:flex border-none text-primary scale-150" />
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 transform">
           {sections.map((_, index) => (
             <button
@@ -85,7 +85,7 @@ export const ServicioSlider = (props: ServicioSliderProps) => {
               onClick={() => api?.scrollTo(index)}
               className={clsx(
                 "relative mx-[3px] inline-block size-2 rounded-full",
-                current === index + 1 ? "bg-white" : "bg-white/40",
+                current === index + 1 ? "bg-primary" : "bg-white/40",
               )}
             />
           ))}

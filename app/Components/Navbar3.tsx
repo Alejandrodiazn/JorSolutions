@@ -79,7 +79,7 @@ export const Navbar3 = (props: Navbar3Props) => {
               transition: { type: "spring", duration: 0.4, bounce: 0 },
             },
           }}
-          className="absolute left-0 top-0 z-50 flex h-dvh w-[90%] flex-col border-r border-border-primary lg:bg-transparent lg:backdrop-blur-none bg-black/50 backdrop-blur px-[5%] pb-4 md:w-[80%] lg:visible lg:static lg:-ml-4 lg:flex lg:h-auto lg:w-auto lg:flex-row lg:border-none lg:px-0 lg:pb-0 lg:[--opacity-closed:100%] lg:[--x-closed:0%]"
+          className="absolute left-0 top-0 z-50 flex h-dvh w-[90%] flex-col border-border-primary lg:bg-transparent lg:backdrop-blur-none bg-black/50 backdrop-blur px-[5%] pb-4 md:w-[80%] lg:visible lg:static lg:-ml-4 lg:flex lg:h-auto lg:w-auto lg:flex-row lg:border-none lg:px-0 lg:pb-0 lg:[--opacity-closed:100%] lg:[--x-closed:0%]"
         >
           <a href={logo.url} className="mb-8 mt-10 flex flex-shrink-0 lg:hidden">
             <img src={logo.src} alt={logo.alt} />
@@ -100,7 +100,7 @@ export const Navbar3 = (props: Navbar3Props) => {
           ))}
           <div className="mt-6 lg:hidden">
             {buttons.map((button, index) => (
-              <Button key={index} variant={button.variant} size={button.size} className="w-full">
+              <Button key={index} variant={button.variant} size={button.size} className="w-full bg-primary text-white border-none">
                 {button.title}
               </Button>
             ))}
@@ -127,7 +127,7 @@ export const Navbar3 = (props: Navbar3Props) => {
               key={index}
               variant={button.variant}
               size={button.size}
-              className="px-4 py-1 md:px-6 md:py-2"
+              className="px-4 py-1 md:px-6 md:py-2 bg-primary text-white border-none"
             >
               {button.title}
             </Button>

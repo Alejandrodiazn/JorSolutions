@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#91BC3B",
+        primary: "#3DB54A",
         secondary: "rgba(36, 170, 225, 1)",
         'gray-footer': '#1C1C1C',
       },

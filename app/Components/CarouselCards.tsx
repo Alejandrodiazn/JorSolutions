@@ -106,7 +106,7 @@ export const CarouselCards = (props: CarouselCardsProps) => {
                   key={index}
                   onClick={() => api?.scrollTo(index)}
                   className={clsx("mx-[3px] inline-block size-2 rounded-full", {
-                    "bg-black": current === index + 1,
+                    "bg-secondary": current === index + 1,
                     "bg-neutral-light": current !== index + 1,
                   })}
                 />
