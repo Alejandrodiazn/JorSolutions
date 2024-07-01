@@ -244,6 +244,101 @@ export const InfrastructureSliderDefaults: InfrastructureSliderProps = {
         },
       ],
     },
+    {
+      image: {
+        src: "/maquinas/tornoc063.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "Distancia entre puntos: 1000 mm Diámetro del husillo: 38 mm",
+      heading: "TORNO PARALELO C0636A-1000 MCLANE",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/Mlaser.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "",
+      heading: "MARCADOR LASER PL-50S",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/lasera3.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "Área de operación 3048mm*1524mm Potencia de salida de láser	6kW/3kW/1.5kW",
+      heading: "Máquina de corte laser A3-OO-GB BODOR",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/form3.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "Gracias a dos Light Processing Unit, esta  impresora de resina de gran tamaño ofrece  precisión y detalles uniformes a lo largo de  toda la base de impresión.",
+      heading: "Impresora  Form 3+",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/form3l.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "Ofrece tecnología y asistencia líderes en el  sector para que puedas pasar menos  tiempo solucionando problemas y más  tiempo imprimiendo.",
+      heading: "Impresora 3D  Form 3L",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
   ],
 };
 
