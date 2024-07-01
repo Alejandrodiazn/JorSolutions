@@ -75,7 +75,7 @@ type ImageProps = {
   export const Footer7Defaults: Footer7Props = {
     logo: {
       url: "#",
-      src: "jorsollogoblack.svg",
+      src: "jor-logo-white.png",
       alt: "Logo image",
     },
     columnLinks: [

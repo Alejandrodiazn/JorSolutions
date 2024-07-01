@@ -69,14 +69,14 @@ export const InfrastructureSlider = (props: InfrastructureSliderProps) => {
           <CarouselContent>
             {sections.map((section, index) => (
               <CarouselItem key={index} className="basis-auto pr-2 md:pr-4 max-w-[335px] md:max-w-[640px]">
-                <div className="rounded-md overflow-hidden">
+                <div className="rounded-md overflow-hidden h-full">
                   <div className="bg-gradient-to-b from-gray-800 to-gray-900 text-white p-12 flex flex-col items-center justify-center h-full">
                     <h3 className="text-3xl font-bold mb-4 text-center">{section.heading}</h3>
                     <p className="text-lg mb-6 text-center">{section.tagline}</p>
                     <img 
                       src={section.image.src} 
                       alt={section.image.alt} 
-                      className="md:max-h-[188px] object-cover w-full" 
+                      className="lg:max-h-[300px]  md:max-h-[188px] object-contain w-full" 
                     />
                   </div>
                 </div>
@@ -113,11 +113,30 @@ export const InfrastructureSliderDefaults: InfrastructureSliderProps = {
   sections: [
     {
       image: {
-        src: "/images/infraestructura1.png",
+        src: "./maquinas/maquina3ejes.png",
         alt: "Imagen de infraestructura 1",
       },
-      tagline: "Diseño",
-      heading: "MAQUINADOS MRO",
+      tagline: "Eje X 1000 mm,  Eje Y 600 mm,  Eje Z 600 mm",
+      heading: "CENTRO DE  MAǪUINADO DE 3 EJES  VMC1000 II HISION",
+      description:
+        "Eje X 1000 mm,  Eje Y 600 mm,  Eje Z 600 mm",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/FresadoraCNC.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "Eje X 760 mm,  Eje Y 355 mm,  Eje Z 400 mm",
+      heading: "Fresadora CNC de  Consola VF3KM400  VIWA",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
       buttons: [
@@ -132,11 +151,87 @@ export const InfrastructureSliderDefaults: InfrastructureSliderProps = {
     },
     {
       image: {
-        src: "/images/infraestructura2.png",
+        src: "/maquinas/RectificadoraM618A.png",
         alt: "Imagen de infraestructura 2",
       },
-      tagline: "Simulación",
-      heading: "MANUFACTURA ADITIVA",
+      tagline: "Tamaño de la mesa 6″ x 18″  Rectificado longitudinal 18″  Rectificado transversal 6″",
+      heading: "Rectificadora M618A (6″x18″) ARIES",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/Fresadore10x.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "Desplazamiento del husillo 127 mm, Desplazamiento longitudinal 914 mm, Desplazamiento transversal 406 mm",
+      heading: "FRESADORA  10X54PULG TM-3S Titanium",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/SierraSC.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "Falta copy",
+      heading: "Sierra cinta horizontal  SC-712 TITANIUM",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/AfiladorPP.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "MOTOR 1/4 HP, 220V, 60  HZ PESO 46 KG 46 KGS",
+      heading: "Afilador PP-U3  GRINDAF",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+      buttons: [
+        { title: "Button", variant: "secondary" },
+        {
+          title: "Button",
+          variant: "link",
+          size: "link",
+          iconRight: <RxChevronRight className="size-6" />,
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/maquinas/FresadoraM10.png",
+        alt: "Imagen de infraestructura 2",
+      },
+      tagline: "CARRERA LONGITUDINAL 920 mm, CARRERA TRANSVERSAL 420 mm",
+      heading: "FRESADORA MESA 10” X  54” X6325 KENTA",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
       buttons: [
