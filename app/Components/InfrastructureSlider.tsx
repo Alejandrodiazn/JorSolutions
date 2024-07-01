@@ -71,7 +71,7 @@ export const InfrastructureSlider = (props: InfrastructureSliderProps) => {
               <CarouselItem key={index} className="basis-auto pr-2 md:pr-4 max-w-[335px] md:max-w-[640px]">
                 <div className="rounded-md overflow-hidden h-full">
                   <div className="bg-gradient-to-b from-gray-800 to-gray-900 text-white p-12 flex flex-col items-center justify-center h-full">
-                    <h3 className="text-3xl font-bold mb-4 text-center">{section.heading}</h3>
+                    <h3 className="lg:text-3xl text-xl font-bold mb-4 text-center">{section.heading}</h3>
                     <p className="text-lg mb-6 text-center">{section.tagline}</p>
                     <img 
                       src={section.image.src} 
