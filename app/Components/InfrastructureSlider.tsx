@@ -59,8 +59,9 @@ export const InfrastructureSlider = (props: InfrastructureSliderProps) => {
   }, [api]);
 
   return (
-    <section className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+    <section className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 relative z-0 bg-black">
+      <img className="absolute top-0 left-0 w-56 lg:w-96 md:w-64 z-10 " src="./deco/deco-green.svg" alt="" />
+      <div className="container relative z-20">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
           <p className="md:text-md">{description}</p>
