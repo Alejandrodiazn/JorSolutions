@@ -33,12 +33,12 @@ export const Layout131 = (props: Layout131Props) => {
             </div>
             <div className="bg-project-gray-gradient p-12 flex flex-col">
             <div className="bg-secondary px-8 py-1 flex mb-3 md:mb-4 w-fit h-fit">
-            <p className=" font-semibold ">{section.tagline}</p>
+            <p className=" font-semibold text-white">{section.tagline}</p>
             </div>
-            <h3 className="mb-5 text-4xl font-bold leading-[1.2] md:mb-6 md:text-5xl lg:text-6xl">
+            <h3 className="mb-5 text-4xl font-bold leading-[1.2] text-white md:mb-6 md:text-5xl lg:text-6xl">
               {section.heading}
             </h3>
-            <p className="mt-5 md:mt-6">{section.description}</p>
+            <p className="text-white mt-5 md:mt-6">{section.description}</p>
             
             <div className="mt-6 items-center gap-4 md:mt-8 hidden">
               {section.buttons.map((button, index) => (

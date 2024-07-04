@@ -63,8 +63,8 @@ export const CarouselCards = (props: CarouselCardsProps) => {
       <img className="absolute top-0 right-0 w-56 lg:w-96 md:w-64 z-10 " src="./deco/deco-proyectos.svg" alt="" />
       <div className="container z-20 relative">
         <div className="mb-12 md:mb-18 lg:mb-20">
-          <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
-          <p className="md:text-md">{description}</p>
+          <h2 className="text-white mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
+          <p className="text-white md:text-md">{description}</p>
         </div>
         <Carousel setApi={setApi} opts={options}>
           <CarouselContent>
@@ -76,12 +76,12 @@ export const CarouselCards = (props: CarouselCardsProps) => {
                   </div>
                   <div className="bg-project-gray-gradient p-12 flex flex-col">
                     <div className="bg-secondary px-8 py-1 flex mb-3 md:mb-4 w-fit h-fit">
-                      <p className="font-semibold">{section.tagline}</p>
+                      <p className="font-semibold text-white">{section.tagline}</p>
                     </div>
                     <h3 className="mb-5 lg:text-4xl font-bold leading-[1.2] md:mb-6 md:text-5xl text-xl">
                       {section.heading}
                     </h3>
-                    <p className="mt-5 md:mt-6">{section.description}</p>
+                    <p className="mt-5 md:mt-6 text-white">{section.description}</p>
                     <div className="mt-6 items-center gap-4 md:mt-8 hidden">
                       {section.buttons.map((button, buttonIndex) => (
                         <Button
