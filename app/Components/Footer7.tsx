@@ -81,11 +81,11 @@ type ImageProps = {
     columnLinks: [
       {
         links: [
-          { title: "Misión", url: "#" },
-          { title: "Conócenos", url: "#" },
-          { title: "Cleanwatt", url: "#" },
-          { title: "Infraestructura", url: "#" },
-          { title: "Proyectos", url: "#" },
+          { title: "Misión", url: "/#mision" },
+          { title: "Conócenos", url: "/#conocenos" },
+          { title: "Cleanwatt", url: "/#cleanwatt" },
+          { title: "Infraestructura", url: "/#Infraestructura" },
+          { title: "Proyectos", url: "/#proyectos" },
         ],
       },
     ],

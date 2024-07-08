@@ -59,7 +59,7 @@ export const InfrastructureSlider = (props: InfrastructureSliderProps) => {
   }, [api]);
 
   return (
-    <section className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 relative z-0 bg-black">
+    <section id="infraestructura" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 relative z-0 bg-black">
       <img className="absolute top-0 left-0 w-56 lg:w-96 md:w-64 z-10 " src="./deco/deco-green.svg" alt="" />
       <div className="container relative z-20">
         <div className="mb-12 md:mb-18 lg:mb-20">
@@ -193,7 +193,7 @@ export const InfrastructureSliderDefaults: InfrastructureSliderProps = {
         src: "/maquinas/SierraSC.png",
         alt: "Imagen de infraestructura 2",
       },
-      tagline: "Falta copy",
+      tagline: "",
       heading: "Sierra cinta horizontal  SC-712 TITANIUM",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",

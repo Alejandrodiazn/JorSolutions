@@ -23,7 +23,7 @@ export const Section2cols: React.FC<Section2colsProps> = (props) => {
 } as Props;
 
 return (
-    <section className="">
+    <section id='mision'>
     <div className=" w-full">
         <div className="grid grid-cols-1 md:grid-cols-2">
         <div className='relative'>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Button,
   Checkbox,
@@ -34,18 +34,30 @@ export const ContactModal1 = (props: ContactModal1Props) => {
   const [message, setMessage] = useState("");
   const [acceptTerms, setAcceptTerms] = useState<boolean | "indeterminate">(false);
 
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log({ name, email, message, acceptTerms });
   };
 
+  useEffect(() => {
+    const buttons = document.querySelectorAll('.modal-button');
+    const openModal = () => setIsOpen(true);
+
+    buttons.forEach(button => button.addEventListener('click', openModal));
+
+    return () => {
+      buttons.forEach(button => button.removeEventListener('click', openModal));
+    };
+  }, []);
+
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container max-w-lg text-center relative">
-        
-        <Dialog>
+        <Dialog open={isOpen} onOpenChange={setIsOpen}>
           <DialogTrigger asChild>
-            <Button>Solicitar cotización</Button>
+            <Button className="hidden">Solicitar cotización</Button>
           </DialogTrigger>
           <DialogPortal>
             <DialogOverlay className="bg-black/25" />

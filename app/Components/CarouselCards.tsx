@@ -59,7 +59,7 @@ export const CarouselCards = (props: CarouselCardsProps) => {
   }, [api]);
 
   return (
-    <section className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 relative bg-black z-0">
+    <section id="proyectos" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 relative bg-black z-0">
       <img className="absolute top-0 right-0 w-56 lg:w-96 md:w-64 z-10 " src="./deco/deco-proyectos.svg" alt="" />
       <div className="container z-20 relative">
         <div className="mb-12 md:mb-18 lg:mb-20">

@@ -22,7 +22,7 @@ export const Header5 = (props: Header5Props) => {
     ...props,
   } as Props;
   return (
-    <header className="relative px-[5%]">
+    <header id="home" className="relative px-[5%]">
       <div className="container">
         <div className="flex max-h-[60rem] min-h-svh items-center py-16 md:py-24 lg:py-28">
           <div className="max-w-md">
@@ -38,7 +38,7 @@ export const Header5 = (props: Header5Props) => {
                   size={button.size}
                   iconRight={button.iconRight}
                   iconLeft={button.iconLeft}
-                  className="bg-primary text-white border-none"
+                  className="modal-button bg-primary text-white border-none"
                 >
                   {button.title}
                 </Button>

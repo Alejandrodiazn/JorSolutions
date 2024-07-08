@@ -21,7 +21,7 @@ type ImageProps = {
       ...props,
     } as Props;
     return (
-      <section className="relative px-[5%]">
+      <section id="cleanwatt" className="relative px-[5%]">
         <div className="container mx-auto">
           <div className="flex items-center py-16 md:py-24 lg:py-28">
             <div className="max-w-md mx-auto text-center">
@@ -40,7 +40,7 @@ type ImageProps = {
                   size={button.size}
                   iconRight={button.iconRight}
                   iconLeft={button.iconLeft}
-                  className="bg-primary text-white border-none"
+                  className="modal-button bg-primary text-white border-none"
                 >
                   {button.title}
                 </Button>

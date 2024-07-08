@@ -100,7 +100,7 @@ export const Navbar3 = (props: Navbar3Props) => {
           ))}
           <div className="mt-6 lg:hidden">
             {buttons.map((button, index) => (
-              <Button key={index} variant={button.variant} size={button.size} className="w-full bg-primary text-white border-none">
+              <Button key={index} variant={button.variant} size={button.size} className="modal-button w-full bg-primary text-white border-none">
                 {button.title}
               </Button>
             ))}
@@ -127,7 +127,7 @@ export const Navbar3 = (props: Navbar3Props) => {
               key={index}
               variant={button.variant}
               size={button.size}
-              className="px-4 py-1 md:px-6 md:py-2 bg-primary text-white border-none"
+              className="modal-button px-4 py-1 md:px-6 md:py-2 bg-primary text-white border-none"
             >
               {button.title}
             </Button>
@@ -202,24 +202,16 @@ const SubMenu = ({ navLink, isMobile }: { navLink: NavLink; isMobile: boolean })
 
 export const Navbar3Defaults: Navbar3Props = {
   logo: {
-    url: "#",
+    url: "/#home",
     src: "jor-logo-white.png",
     alt: "Logo image",
   },
   navLinks: [
-    { title: "Misión", url: "#" },
-    { title: "Conócenos", url: "#" },
-    { title: "Cleanwatt", url: "#" },
-    { title: "Proyectos", url: "#" },
-    {
-      title: "Nuestros servicios",
-      url: "#",
-      subMenuLinks: [
-        { title: "Link Four", url: "#" },
-        { title: "Link Five", url: "#" },
-        { title: "Link Six", url: "#" },
-      ],
-    },
+    { title: "Misión", url: "/#mision" },
+    { title: "Conócenos", url: "/#conocenos" },
+    { title: "Cleanwatt", url: "/#cleanwatt" },
+    { title: "Proyectos", url: "/#proyectos" },
+    { title: "Infraestructura", url: "/#infraestructura" },
   ],
   buttons: [
     {
