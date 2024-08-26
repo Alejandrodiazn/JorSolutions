@@ -80,7 +80,7 @@ export const Section2colsDefaults: Section2colsProps = {
     "Explora el corazón de nuestra Fundación 'Soy porque eres', donde cada  acción cuenta. Ofrecemos capacitaciones en validación de productos,  procuración de fondos y desarrollo de planes de negocio. Descubre cómo  cada paso que damos refleja nuestro compromiso con el crecimiento.",
   heading2: "VDG Soluciones integrales",
   description2:
-    "En VDG Soluciones Integrales, estamos  convencidos de que siempre existe una solución para reducir el impacto  ambiental. Por eso, entregamos emplaye reciclado de alta calidad,  ayudando a nuestros clientes a minimizar costos y contribuir a un  entorno más sostenible.",
+    "En VDG Soluciones Integrales, estamos  convencidos de que siempre existe una solución para reducir el impacto  ambiental. Por eso, entregamos soluciones de empaque ecologicas,  ayudando a nuestros clientes a minimizar costos y contribuir a un  entorno más sostenible.",
   image1: {
     src: "fundacion.jpg",
     alt: "Imagen de Cleanwatt",

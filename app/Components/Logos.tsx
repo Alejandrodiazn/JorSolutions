@@ -56,7 +56,6 @@ type ImageProps = {
       { src: "./section-logos/logo9.png", alt: "Ciaspe logo" },
       { src: "./section-logos/logo10.png", alt: "Ciaspe logo" },
       { src: "./section-logos/logo11.png", alt: "Ciaspe logo" },
-      { src: "./section-logos/logo12.png", alt: "Ciaspe logo" },
     ],
   };
   

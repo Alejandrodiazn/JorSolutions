@@ -59,7 +59,7 @@ export const Header5 = (props: Header5Props) => {
 };
 
 export const Header5Defaults: Header5Props = {
-  heading: "Ingeniería: Diseño, simulación, manufactura e integración .SPECC",
+  heading: "Ingeniería: Diseño, Simulación, Manufactura e Integración",
   description:
     "Donde la innovación y la tecnología se unen para impulsar un mañana más sostenible. Descubre cómo nuestras soluciones en energías renovables, industrial y desarrollo sustentable pueden llevar tu empresa hacia al siguiente nivel.",
   buttons: [{ title: "Solicitar cotización" }],
